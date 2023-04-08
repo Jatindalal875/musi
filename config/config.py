@@ -80,11 +80,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/ef0cce2646b2a30f128cc.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/bcb63300e6794512193c6.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/a4ca47f0b3937c44642b3.jpg",
+    "https://te.legra.ph/file/66e8e53c21c73f34c58f4.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/ad1f7fb314b8b893a25d6.jpg"
@@ -132,11 +132,11 @@ if UPSTREAM_REPO:
         sys.exit()
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "assets/Ping.jpeg":
+    if PING_IMG_URL != "https://te.legra.ph/file/66e8e53c21c73f34c58f4.jpg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://te.legra.ph/file/a4ca47f0b3937c44642b3.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/66e8e53c21c73f34c58f4.jpg"
 
 if START_IMG_URL:
-    if START_IMG_URL != "assets/Ping.jpeg":
+    if START_IMG_URL != "https://te.legra.ph/file/bcb63300e6794512193c6.jpg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/ef0cce2646b2a30f128cc.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/bcb63300e6794512193c6.jpg"
